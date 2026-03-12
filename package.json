@@ -1,0 +1,14 @@
+{
+  "name": "sitedoacao-miuse",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site de doacao com integracao PIX miuse via backend local",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esperança Solidária - Ajude a Salvar Vidas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" class="logo-icon" role="img" aria-label="Símbolo Esperança Solidária">
+              <defs>
+                <linearGradient id="logoGradient" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#22c55e" />
+                  <stop offset="100%" stop-color="#15803d" />
+                </linearGradient>
+              </defs>
+              <circle cx="32" cy="32" r="30" class="logo-circle" />
+              <path
+                class="logo-heart"
+                d="M32 46.5c-9.8-5.9-15.8-11.2-15.8-18.3 0-5.2 3.8-9.2 8.8-9.2 3 0 5.7 1.5 7 4 1.3-2.5 4-4 7-4 5 0 8.8 4 8.8 9.2 0 7.1-6 12.4-15.8 18.3z"
+              />
+              <path
+                class="logo-pulse"
+                d="M14 33h11l3-6 4.2 14 4.4-9h13"
+              />
+            </svg>
+          </span>
+          <div>
+            <h2>Esperança Solidária</h2>
+            <p>Vaquinha de Esperança</p>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link">Início</a></li>
+          <li><a href="#ajuda" class="nav-link">Doação</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="inicio" class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">Salvar a vida da Mayara</h1>
+          <p class="hero-subtitle">
+            Mayara está lutando contra o câncer. A cada 14 dias, precisa viajar de Paraná para São Paulo para fazer uma quimioterapia que pode salvar sua vida.
+          </p>
+          <a href="#ajuda" class="btn btn-primary btn-lg">
+            💚 Ajudar Agora
+          </a>
+        </div>
+      </section>
+
+      <!-- Donation Section -->
+      <section id="ajuda" class="donation-section">
+        <div class="container">
+          <div class="donation-grid">
+            <!-- Left: Donation Card -->
+            <div class="donation-card">
+              <div class="alert-box">
+                <span class="alert-emoji">🚨</span>
+                <p><strong>Mayara precisa de ajuda urgente para continuar seu tratamento!</strong></p>
+              </div>
+
+              <div class="donation-stats">
+                <div class="stat">
+                  <span class="stat-value">R$ 4.000,00</span>
+                  <span class="stat-label">já arrecadados</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                  <span class="stat-value">R$ 50.000,00</span>
+                  <span class="stat-label">meta total</span>
+                </div>
+              </div>
+
+              <!-- Progress Bar -->
+              <div class="progress-container">
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 8%"></div>
+                </div>
+                <div class="progress-info">
+                  <span>8% completo</span>
+                  <span>2.672 doadores</span>
+                </div>
+              </div>
+
+              <!-- Donation Options -->
+              <div class="donation-options">
+                <p class="options-title">Escolha o valor de sua contribuição:</p>
+                <div class="amount-buttons">
+                  <button class="amount-btn" data-amount="30">R$ 30</button>
+                  <button class="amount-btn" data-amount="50">R$ 50</button>
+                  <button class="amount-btn active" data-amount="100">R$ 100</button>
+                  <button class="amount-btn" data-amount="200">R$ 200</button>
+                </div>
+
+                <div class="custom-amount">
+                  <label for="customAmount">Ou digite outro valor:</label>
+                  <div class="input-group">
+                    <span>R$</span>
+                    <input
+                      id="customAmount"
+                      type="number"
+                      min="5"
+                      placeholder="0,00"
+                    />
+                  </div>
+                </div>
+
+                <button class="btn btn-primary btn-block" id="donateButton">
+                  💚 Fazer Doação
+                </button>
+              </div>
+
+              <p class="donation-note">
+                ✓ Pagamento seguro via Pix  |  ✓ Sem taxas adicionais
+              </p>
+            </div>
+
+            <!-- Right: Mayara's Story -->
+            <div class="story-section">
+              <div class="story-image">
+                <video
+                  src="./ssstik.io_@ongesperancasolidaria22_1773143535624.mp4"
+                  controls
+                  poster=""
+                  class="story-video"
+                ></video>
+              </div>
+
+              <h2 class="story-title">Quem é Mayara?</h2>
+              <p class="story-text">
+                Olá! Meu nome é Mayara, tenho 33 anos e estou lutando para viver. 
+                Tenho um câncer agressivo que requer uma quimioterapia especializada 
+                que não está disponível pelo SUS.
+              </p>
+
+              <div class="story-highlight">
+                <span class="highlight-icon">⏰</span>
+                <p>
+                  <strong>A cada 14 dias</strong>, preciso viajar de Paraná para São Paulo 
+                  e investir uma fortuna em passagens e tratamento. Estou correndo o risco 
+                  de perder essa medicação que lutei 3 meses para conseguir.
+                </p>
+              </div>
+
+              <h3 class="uses-title">O que sua doação custeará:</h3>
+              <ul class="uses-list">
+                <li>🚌 Passagens de ônibus intermunicipal (R$ 400 cada viagem)</li>
+                <li>💊 Quimioterapia especializada personalizada</li>
+                <li>🏥 Medicamentos continuos de alto custo</li>
+                <li>🏨 Hospedagem em São Paulo durante tratamento</li>
+              </ul>
+
+              <div class="share-section">
+                <p>Compartilhe comigo:</p>
+                <button class="btn btn-secondary">
+                  📤 Compartilhar Esta Campanha
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust Section -->
+      <section id="historia" class="trust-section">
+        <div class="container">
+          <h2 class="section-title">Por que confiar?</h2>
+          <p class="section-subtitle">
+            Transparência, segurança e comprovação em cada doação
+          </p>
+
+          <div class="trust-grid">
+            <div class="trust-card">
+              <div class="trust-icon">🔒</div>
+              <h3>Segurança Garantida</h3>
+              <p>
+                Pagamento via Pix direto do seu banco. Você controla cada 
+                transação sem intermediários.
+              </p>
+            </div>
+
+            <div class="trust-card">
+              <div class="trust-icon">📊</div>
+              <h3>Transparência Total</h3>
+              <p>
+                Atualizações regulares sobre o tratamento e comprovantes 
+                de gastos com cada doação.
+              </p>
+            </div>
+
+            <div class="trust-card">
+              <div class="trust-icon">💯</div>
+              <h3>Zero Taxas</h3>
+              <p>
+                Sem descontos. 100% de sua doação vai direto para os 
+                custos do tratamento da Mayara.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq-section">
+        <div class="container">
+          <h2 class="section-title">Perguntas Frequentes</h2>
+
+          <div class="faq-grid">
+            <div class="faq-item">
+              <h4>Como faço para doar?</h4>
+              <p>
+                Escolha um valor, clique em "Fazer Doação" e complete 
+                o Pix no seu aplicativo bancário. Fácil e seguro!
+              </p>
+            </div>
+
+            <div class="faq-item">
+              <h4>Posso acompanhar o progresso?</h4>
+              <p>
+                Sim! A página será atualizada com novas informações sobre 
+                as consultas e comprovantes dos gastos.
+              </p>
+            </div>
+
+            <div class="faq-item">
+              <h4>Qual é a meta?</h4>
+              <p>
+                A meta é arrecadar R$ 50.000 para cobrir 1 ano de 
+                tratamento (12 viagens de 14 em 14 dias).
+              </p>
+            </div>
+
+            <div class="faq-item">
+              <h4>Minha doação é segura?</h4>
+              <p>
+                Totalmente! Usamos Pix que é regulado pelo Banco Central 
+                e você tem controle total sobre sua transação.
+              </p>
+            </div>
+
+            <div class="faq-item">
+              <h4>Posso ser anônimo?</h4>
+              <p>
+                Sim. A doação é completamente confidencial se desejar. 
+                Nenhuma informação pessoal é exigida.
+              </p>
+            </div>
+
+            <div class="faq-item">
+              <h4>E se a meta for atingida?</h4>
+              <p>
+                Se ultrapassarmos a meta, o valor extra será destinado 
+                a outros tratamentos que Mayara possa precisar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="cta-final">
+        <div class="container">
+          <h2>Uma vida está em jogo.</h2>
+          <p>
+            Mayara precisa de nossa ajuda agora. Cada real faz diferença.
+          </p>
+          <a href="#ajuda" class="btn btn-primary btn-lg">
+            💚 Quero Ajudar
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          <strong>Esperança Solidária</strong> - Ajudando a Mayara a lutar pela vida
+        </p>
+        <p class="footer-note">
+          Doações seguras via Pix | Transparência garantida | Seu apoio salva vidas 💚
+        </p>
+      </div>
+    </footer>
+
+    <!-- Pix Modal -->
+    <div class="modal" id="pixModal" aria-hidden="true">
+      <div class="modal-backdrop" data-close="true"></div>
+      <div class="modal-content" role="dialog" aria-modal="true">
+        <button class="modal-close" id="closeModal" aria-label="Fechar">✕</button>
+        
+        <h3 class="modal-title">Pix para Doação</h3>
+        <p class="modal-subtitle">
+          Escaneie o QR Code ou copie o código Pix abaixo:
+        </p>
+
+        <div class="modal-grid">
+          <div class="qr-container">
+            <img id="pixQr" alt="QR Code Pix" class="qr-code" />
+          </div>
+
+          <div class="pix-details">
+            <label>Código Pix (Copiar e Colar):</label>
+            <textarea id="pixCode" readonly class="pix-input"></textarea>
+            <button class="btn btn-secondary" id="copyPix">
+              📋 Copiar Código
+            </button>
+
+            <div class="payment-id">
+              <small>ID: <span id="paymentIdText"></span></small>
+            </div>
+
+            <button class="btn btn-secondary" id="checkPixStatus">
+              🔍 Verificar Status
+            </button>
+
+            <p class="status-text" id="pixStatus"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-container" id="toastContainer" aria-live="polite">
+      <div class="toast" id="donationToast" role="status">
+        <span class="toast-icon">✅</span>
+        <span class="toast-text" id="toastText"></span>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
