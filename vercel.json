@@ -6,15 +6,7 @@
       "use": "@vercel/node"
     },
     {
-      "src": "doacao.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "styles.css",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "main.js",
+      "src": "*.{html,css,js,mp4}",
       "use": "@vercel/static"
     }
   ],
@@ -24,12 +16,8 @@
       "dest": "/server.js"
     },
     {
-      "src": "/styles.css",
-      "dest": "/styles.css"
-    },
-    {
-      "src": "/main.js",
-      "dest": "/main.js"
+      "src": "/(.+\\.(?:css|js|mp4|png|jpg|jpeg|gif|svg|webp|ico))",
+      "dest": "/$1"
     },
     {
       "src": "/(.*)",
